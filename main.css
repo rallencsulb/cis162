@@ -1,0 +1,165 @@
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, ol, p, section, span, ul {
+   background: transparent;
+   margin: 0;
+   padding: 0;
+   vertical-align: baseline;
+   box-sizing: border-box;   
+}
+html {background-color:bisque}
+body {
+      background-color: rgb(113, 86, 39);
+      font-family: Segoe, Verdana, sans-serif;
+      line-height: 1; 
+   margin-left: auto;
+   margin-right: auto;   
+   max-width: 960px;
+   min-width: 640px;
+   width: 95%;
+}
+
+/* Body Header Styles */
+
+body > header > nav li {
+   width: 20%;
+}
+        
+header h1 {margin-bottom: 0;
+          text-align: center;
+           background-color:burlywood;}
+
+h1{color:white;}
+
+nav {
+   display: inline-block;
+    width:100%;
+
+    margin: 0 auto;
+  
+    text-align: center;
+}
+
+nav ul li {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav > ul {line-height:2em;
+     list-style-type: none;
+     padding-left:5px;
+      }
+/* Adding these properties will make the color fill nav container. I am currently setting the body color to match the nav so that it looks filled by inheritance. 
+ overflow:hidden;
+  background-color: blue;
+Found this fix on w3schools
+https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black
+
+*/
+nav li {
+   display: block;
+   float: left;
+   
+}
+
+nav a {
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   background-color: rgb(113, 86, 39);
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav a:link, 
+nav a:visited {
+   color: rgb(239, 220, 156);
+}
+
+nav a:hover, 
+nav a:active {
+   background-color: rgb(71, 52, 29);
+}   
+
+/*All links */
+
+a:link, 
+a:visited {
+   color: rgb(71, 52, 29);
+}
+
+a:hover, 
+a:active {
+   background-color: rgb(239, 220, 156);
+}
+/* Left Column Paragraph Styles */
+
+section#leftColumn p {
+   color: rgb(248, 248, 186);
+   font-size: 0.9em;
+   line-height: 1.6em;
+}
+/* Left Column Styles */
+
+section#leftColumn {
+   clear: left;
+   float: left;
+   padding: 1.5em;
+   width: 63%;
+    background-color: rgb(71, 52, 29);
+    margin-right:25px;
+    color: rgb(248, 248, 186);
+}
+#leftCloumn ol {padding-left: 25px;}
+
+#leftColumn img {
+   display: block;
+   width: 100%;
+   padding-left: 15px;
+}
+/* Right Column Styles */
+
+section#rightColumn {
+   float: left;
+   margin-top: 50px;
+   width: 33%;
+   color: rgb(248, 248, 186);
+   
+}
+
+section#rightColumn img {
+   display: block;
+   width: 100%;
+}
+section#rightColumn p {
+   color: rgb(248, 248, 186);
+   font-size: 0.9em;
+   line-height: 1.6em;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color:burlywood;
+   clear: left;
+}
+/* Contact Info Styles */
+
+section#contactInfo p {
+   line-height: 1.4em;
+   margin: 1em;
+}   
+
+footer::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+footer > section#contactInfo {
+   float: left;
+   width: 34%;
+}
